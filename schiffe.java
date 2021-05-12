@@ -7,10 +7,19 @@
  */
 public class schiffe
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    boolean versenkt;
+    int xKoordinate;
+    int yKoordinate;
+    
+    public void alsVersenktMarkieren(){
+        versenkt = true;
+    }
+}
 
-    /**
+   
+
+    /**https://github.com/marie-rodig/10d_Schiffeversenken
+
      * Constructor for objects of class schiffe
      */
     public schiffe()
@@ -31,3 +40,4 @@ public class schiffe
         return x + y;
     }
 }
+
