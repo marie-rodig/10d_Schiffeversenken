@@ -1,13 +1,11 @@
 
-/**
- * Beschreiben Sie hier die Klasse Spieler.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+
 public class Spieler
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+    SPIELER1
+    Spieler2
+    
+    
     private int x;
 
     /**
@@ -15,7 +13,7 @@ public class Spieler
      */
     public Spieler()
     {
-        // Instanzvariable initialisieren
+        
         x = 0;
     }
 
