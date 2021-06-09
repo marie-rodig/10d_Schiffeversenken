@@ -1,53 +1,65 @@
 
-/**
- * Write a description of class schiffe here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class SCHIFFE
 {
-    RECHTECK figur12;
-    RECHTECK figur22;
-    RECHTECK figur13;
-    RECHTECK figur23;
-    RECHTECK figur14;
-    RECHTECK figur24;
-    RECHTECK figur15;
-    RECHTECK figur25;
     
-    boolean versenkt;
-    int xKoordinate;
-    int yKoordinate;
+      public static void main(String[] args) {
+    System.out.println("Schiffeversenken - Mini");
+   
+    Scanner scr = new Scanner(System.in);
+   
+    int pos1=0;
+    int pos2=0;
+    int pos3=0;
+    int win;
+ 
     
-    public void alsVersenktMarkieren(){
-        versenkt = true;
-    }
+   
+    int p1 = (int) (Math.random()*8+1);
+    int p2 = p1+1;
+    int p3 = p1+2;
+    int test;
+   
+    //Eingabe + Anzeige:
+   
+    String[] felder = new String[10];;
+    do {
+      System.out.println();
+      System.out.print("Position zwischen 1/10: ");
+      int pUser = scr.nextInt()-1;
+   
+      for (int x=0;x<felder.length ;x++ ) {
+        if (pUser==p1) {
+          felder[p1]="[x]";
+          pos1=1;
+        }
+        else if (pUser==p2) {
+          felder[p2]="[x]";
+          pos2=1;
+        }
+        else if (pUser==p3) {
+          felder[p3]="[x]";
+          pos3=1;
+        } 
+        else if (pUser>p3 || pUser<p1) {
+          felder[pUser]="[-]";
+        } 
+      }
+     
+      for (int x=0;x<0 ;x++ ) {
+        felder[x]="[]";
+      } 
+     
+      System.out.println();
+      System.out.println();
+      win = pos1+pos2+pos3;
+      if (win==3) {
+        System.out.println("Gewonnen!");
+        System.out.println();
+      } 
+    } while (win==0 || win==1 || win==2); 
+  }
 }
 
-    public SCHIFFE()
-    {
-        figur12 = new RECHTECK ();
-        figur22 = new RECHTECK ();
-        figur13 = new RECHTECK ();
-        figur23 = new RECHTECK ();
-        figur14 = new RECHTECK ();
-        figur24 = new RECHTECK ();
-        figur15 = new RECHTECK ();
-        figur25 = new RECHTECK ();
-        
-          
 
-    }
-
-     x = 0;
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
-}
+ 
 
