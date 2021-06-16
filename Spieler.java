@@ -13,7 +13,7 @@ public class Spieler
 		this(sp1.getSpielfeld());
 	}
 	
-	public int Spielfeld sp (int y) {
+	public int Spielfeld ;sp (int y) {
 		if(sp != null) {
 			this.sp = sp;
 			hoehe = sp.getHoehe();
