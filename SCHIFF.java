@@ -5,8 +5,8 @@ class SCHIFF
    //Eigfenschaften
    private boolean schiffwurdebeschossen;
    private boolean schiffistaufgebiet;
-   private boolean
-    SCHIFF schiff;
+   private boolean versenkeschiff;
+  
    RUMPF [] rumpf;
     
     
