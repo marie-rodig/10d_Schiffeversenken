@@ -2,7 +2,7 @@
 
 public class Spieler
 {
-    abstract class Spieler implements Mode {
+    abstract class Spieler  {
     protected Spielfeld sp;
     private int hoehe,breite;
 

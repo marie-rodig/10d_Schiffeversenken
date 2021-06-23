@@ -2,43 +2,55 @@
 public class Gebiet
 {
     // Eigenschaften
-    private boolean feldwurdebeschossen;
-    private boolean schiffIstAufFeld;
+    private boolean gebietwurdebeschossen;
+    private boolean schiffIstAufGebiet;
+    private boolean versenkeschiff;
 
    //Konstruktor
     public Gebiet()
     {
-        feldwurdebeschossen=false;
-        schiffIstAufFeld=false;
+        gebietwurdebeschossen=false;
+        schiffIstAufGebiet=false;
     }
 
     //Methoden
     public boolean beschiessefeld () 
 {
     {
-      feldwurdebeschossen=true;
-      if (schiffIstAufFeld) {
-      versenkeSchiff();
+      gebietwurdebeschossen=true;
+      if (schiffIstAufGebiet) {
+      versenkeschiff();
       return true;
       }
       else return false;
           }
  }
-
- public void setzeSchiff (){
-   schiffIstAufFeld=true;
+public boolean versenkeschiff () 
+{
+    {
+      gebietwurdebeschossen=true;
+      if (schiffIstAufGebiet) {
+      versenkeschiff();
+      return true;
+    }
+    else return false;
+}
+      
+ public boolean setzeSchiff (){
+   schiffIstAufGebiet=true;
  }
 
- public void setzteSchiff(){
-     schiffIstAufFeld=false;
+ public void setzeSchiff(){
+     schiffIstAufGebiet=false;
      }
 public boolean 
  
-isFeldWurdeBeschossen (){
- return feldWurdeBeschossen;
+gebietwurdebeschossen (){
+ return gebietwurdebeschossen;
     
 }
 
- public boolean isSchiff() {
-     return schiffIstAufFeld;
+ public boolean Schiff() {
+     return schiffIstAufGebiet;
  }
+}
