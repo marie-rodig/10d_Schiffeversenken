@@ -2,10 +2,12 @@
 
 class SCHIFF
 {
-    
+   //Eigfenschaften
+   private boolean schiffwurdebeschossen;
+   private boolean schiffistaufgebiet;
+   private boolean
     SCHIFF schiff;
-    
-    RUMPF [] rumpf;
+   RUMPF [] rumpf;
     
     
     SCHIFF (int x, int y, char richtung)

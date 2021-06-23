@@ -17,8 +17,7 @@ class RUMPF
 
         anzeige = new JComponent () {
             // Stelltg. clearRect (0, 0, groesse, groesse);
-                g. farbeSetzen (farbe ="schwarz");
-       das Rumpfelement auf dem Fenster dar.
+                
             public void paintComponent (Graphics g)
             {
                           g. fillRect (0, 0, groesse - 1, groesse - 1);
@@ -49,27 +48,19 @@ class RUMPF
         anzeige. PositionSetzen (OBERFLAECHE. FensterBreiteGeben () / 2 + x * groesse, OBERFLAECHE. FensterHoeheGeben () / 2 + y * groesse);
     }
 
-    /**
-     * Gibt den X-Wert der Position des Kopfelements.
-     * @return x-Position
-     */
+    
     int XPositionGeben ()
     {
         return x;
     }
 
-    /**
-     * Gibt den Y-Wert der Position des Kopfelements.
-     * @return y-Position
-     */
+    
     int YPositionGeben ()
     {
         return y;
     }
 
-    /**
-     * Entfernt die Figur aus der Anzeige
-     */
+    
     public void Entfernen ()
     {
         (OBERFLAECHE. FensterGeben ()). remove (anzeige);
