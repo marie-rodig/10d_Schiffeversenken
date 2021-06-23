@@ -79,18 +79,4 @@ public class Spielfeld
         }
     }
 
-
-
-    
-
-
-    
-     
-    
-     
-     
-    
-     
-    
-    
 }

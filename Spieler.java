@@ -6,7 +6,7 @@ public class Spieler
     protected Spielfeld sp;
     private int hoehe,breite;
 
-<<<<<<< HEAD
+ 
     public Spieler() {
     }
     
@@ -14,7 +14,7 @@ public class Spieler
         this(sp1.getSpielfeld());
     }
     
-    public int Spielfeld ;sp (int y) {
+    public int Spielfeld ;  {
         if(sp != null) {
             this.sp = sp;
             hoehe = sp.getHoehe();
@@ -23,7 +23,7 @@ public class Spieler
     }
     
     abstract public void init(int mode);
-=======
+
     public Spieler() {
     }
     
@@ -31,7 +31,7 @@ public class Spieler
         this(sp1.getSpielfeld());
     }
     
-    public int Spielfeld sp (int y) {
+    public int Spielfeld  (int y) {
         if(sp != null) {
             this.sp = sp;
             hoehe = sp.getHoehe();
@@ -40,7 +40,7 @@ public class Spieler
     }
     
     abstract public void init(int mode);
->>>>>>> 0319fefad54d9cb1edad22d9fc595d80ba5fb67f
+
 
     public Spielfeld getSpielfeld() {
         return sp;
