@@ -1,5 +1,5 @@
 
-public class Gebiet
+public class GEBIET
 {
     // Eigenschaften
     private boolean feldwurdebeschossen;

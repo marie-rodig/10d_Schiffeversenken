@@ -1,6 +1,6 @@
 
 
-public class Spieler
+public class SPIELER
 {
     abstract class Spieler implements Mode {
     protected Spielfeld sp;
