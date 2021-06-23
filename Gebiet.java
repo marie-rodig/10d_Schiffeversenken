@@ -43,7 +43,7 @@ public boolean versenkeschiff ()
  public void setzeSchiff(){
      schiffIstAufGebiet=false;
      }
-public boolean 
+
  
 gebietwurdebeschossen (){
  return gebietwurdebeschossen;
@@ -53,4 +53,5 @@ gebietwurdebeschossen (){
  public boolean Schiff() {
      return schiffIstAufGebiet;
  }
+}
 }

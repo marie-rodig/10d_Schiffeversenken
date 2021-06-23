@@ -3,17 +3,18 @@ class RUMPF
     
     private JFrame fenster;
     
+    
    
-    private static final int groesse = OBERFLAECHE. RasterGroesseGeben ();
+    private static final int groesse = SPIELFELD. RasterGroesseGeben ();
 
-    /** Interna */
+    
     private int x;
     private int y;
     private JComponent anzeige;
 
     RUMPF()
     {
-        fenster = OBERFLAECHE. FensterGeben ();
+        fenster = SPIELFELD. FensterGeben ();
 
         anzeige = new JComponent () {
             // Stelltg. clearRect (0, 0, groesse, groesse);
@@ -45,7 +46,8 @@ class RUMPF
     {
         this. x = x;
         this. y = y;
-        anzeige. PositionSetzen (OBERFLAECHE. FensterBreiteGeben () / 2 + x * groesse, OBERFLAECHE. FensterHoeheGeben () / 2 + y * groesse);
+        anzeige. PositionSetzen (SPIELFELD. FensterBreiteGeben () / 2 + x * groesse,
+        SPIELFELD. FensterHoeheGeben () / 2 + y * groesse);
     }
 
     
@@ -63,7 +65,7 @@ class RUMPF
     
     public void Entfernen ()
     {
-        (OBERFLAECHE. FensterGeben ()). remove (anzeige);
-        (OBERFLAECHE. FensterGeben ()). repaint();
+        (SPIELFELD. FensterGeben ()). remove (anzeige);
+        (SPIELFELD. FensterGeben ()). repaint();
     }
 }

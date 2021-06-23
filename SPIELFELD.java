@@ -1,7 +1,7 @@
  
  
  
-public class Spielfeld
+public class SPIELFELD
 {
     private Gebiet [][] feld;
     
