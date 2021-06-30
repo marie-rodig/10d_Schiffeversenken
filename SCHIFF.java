@@ -12,7 +12,7 @@ class SCHIFF
     
     SCHIFF (int x, int y, char richtung)
     {
-        SCHIFF = new SCHIFFSYMBOL ();
+        SCHIFF = new Schiffsymbol ();
         SCHIFF. AusrichtungSetzen (richtung);
         SCHIFF. PositionSetzen(x, y);
         RUMPF = new RUMPFSYMBOL [5];
@@ -55,7 +55,8 @@ class SCHIFF
         kopf. AusrichtungSetzen (richtungNeu);
        
     }
-  {int XPositionGeben;
+   { 
+      int XPositionGeben;
   
   return schiff.XPositionGeben();
   }
