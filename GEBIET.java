@@ -1,5 +1,5 @@
 
-public class Gebiet
+public class GEBIET
 {
     // Eigenschaften
 <<<<<<< HEAD
@@ -7,7 +7,7 @@ public class Gebiet
     private boolean schiffIstAufFeld;
 
    //Konstruktor
-    public Gebiet()
+    public GEBIET()
     {
         feldwurdebeschossen=false;
         schiffIstAufFeld=false;
