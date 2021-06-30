@@ -12,7 +12,7 @@ class SCHIFF
     
     SCHIFF (int x, int y, char richtung)
     {
-        SCHIFF = new SCHIFFESYMBOL ();
+        SCHIFF = new SCHIFFSYMBOL ();
         schiff. AusrichtungSetzen (richtung);
         schiff. PositionSetzen(x, y);
         rumpf = new RUMPFSYMBOL [5];
