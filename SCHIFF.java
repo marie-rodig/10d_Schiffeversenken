@@ -2,7 +2,7 @@
 
 class SCHIFF
 {
-   //Eigfenschaften
+  { //Eigfenschaften
    private boolean schiffwurdebeschossen;
    private boolean schiffistaufgebiet;
    private boolean versenkeschiff;
@@ -51,14 +51,14 @@ class SCHIFF
     }
     
       void RichtungSetzen (char richtungNeu)
-    {
+    
         kopf. AusrichtungSetzen (richtungNeu);
-       
+    }
     }
    { 
       int XPositionGeben;
   
-  return schiff.XPositionGeben();
+     return schiff.XPositionGeben();
   }
 }
     
