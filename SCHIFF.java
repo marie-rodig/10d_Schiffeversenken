@@ -2,8 +2,6 @@
 
 class SCHIFF
 {
-    {
-  { 
   
    private boolean schiffwurdebeschossen;
    private boolean schiffistaufgebiet;
@@ -53,16 +51,15 @@ class SCHIFF
     }
     
       void RichtungSetzen (char richtungNeu)
-    
-        kopf. AusrichtungSetzen (richtungNeu);
-    }
-    {
-   { 
-      int XPositionGeben;
+     {
+        int XPositionGeben;
   
-     return schiff.XPositionGeben();
-  }
-}
+     return schiff.XPositionGeben(); 
+    }
+     void kopf (AusrichtungSetzen (RichtungNeu));
+
+    }   
+
    
    
    

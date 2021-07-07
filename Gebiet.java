@@ -68,7 +68,8 @@ isFeldWurdeBeschossen (){
           }
  }
 public boolean versenkeschiff () 
-{
+
+
     {
       gebietwurdebeschossen=true;
       if (schiffIstAufGebiet) {
@@ -77,7 +78,7 @@ public boolean versenkeschiff ()
     }
     else return false;
 }
-      
+   
  public boolean setzeSchiff (){
    schiffIstAufGebiet=true;
  }
@@ -88,14 +89,14 @@ public boolean versenkeschiff ()
 
  
 Gebietwurdebeschossen (){
- return gebietwurdebeschossen;
+  return gebietwurdebeschossen;
     
 }
 
  public boolean Schiff() {
      return schiffIstAufGebiet;
  }
-}
+
 }
 
 

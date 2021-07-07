@@ -16,7 +16,8 @@ class RUMPF
     {
         fenster = SPIELFELD. FensterGeben ();
 
-        anzeige = new JComponent () {
+        anzeige = new JComponent ()
+        {
             // Stelltg. clearRect (0, 0, groesse, groesse);
                 
             public void paintComponent (Graphics g)

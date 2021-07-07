@@ -2,7 +2,7 @@
 
 public class SPIELER extends SPIELFELD
 {
-    abstract class SPIELER  {
+    abstract class SPIELER {
     protected Spielfeld sp;
     private int hoehe,breite;
 
@@ -10,7 +10,7 @@ public class SPIELER extends SPIELFELD
     public SPIELER() {
     }
     
-    public SPIELER(SPIELER sp1) {
+    public SPIELER (SPIELER sp1) {
         this(sp1.getSpielfeld());
     }
     
@@ -23,9 +23,9 @@ public class SPIELER extends SPIELFELD
     }
     
     abstract public void init(int mode);
-
-    public SPIELER() {
-    }
+     
+    void getSpielfeld (int);
+    
     
     public int Spielfeld  (int y) {
         if(sp !=  null) {
@@ -35,14 +35,12 @@ public class SPIELER extends SPIELFELD
         }
     }
     
-    abstract public void init(int mode);
 
-
-    public Spielfeld getSpielfeld() {
+    public SPIELFELD getSpielfeld() {
         return sp;
     }
     
-    public void setSpielfeld(Spielfeld sp) {
+    public void setSpielfeld(SPIELFELD sp) {
         if(sp != null) {
             this.sp = sp;
         }
