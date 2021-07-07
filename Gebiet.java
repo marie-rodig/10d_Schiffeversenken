@@ -1,5 +1,5 @@
 
-public class Gebiet
+public class Gebiet extends SPIELFELD
 {
     // Eigenschaften
 

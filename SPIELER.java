@@ -1,6 +1,6 @@
 
 
-public class SPIELER
+public class SPIELER extends SPIELFELD
 {
     abstract class SPIELER  {
     protected Spielfeld sp;
@@ -25,10 +25,6 @@ public class SPIELER
     abstract public void init(int mode);
 
     public SPIELER() {
-    }
-    
-    public Spieler(Spieler sp1) {
-        this(sp1.getSpielfeld());
     }
     
     public int Spielfeld  (int y) {

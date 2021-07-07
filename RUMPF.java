@@ -61,11 +61,4 @@ class RUMPF
     {
         return y;
     }
-
-    
-    public void Entfernen ()
-    {
-        (Spielfeld.FensterGeben ()). remove (anzeige);
-        (Spielfeld.FensterGeben ()). repaint();
-    }
 }
