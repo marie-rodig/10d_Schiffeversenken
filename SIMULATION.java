@@ -8,22 +8,23 @@ class SIMULATION extends SPIEL
    
     SIMULATION ()
     {
-        timer = new Timer (1000, new ActionListener () {
+        timer = new Timer (1000, new ActionListener () 
+        {
             
             public void actionPerformed (ActionEvent evt)
             {
                 TaktImpulsAusfuehren ();
             }
-        });
+        })
            {
             
              public void keyPressed(KeyEvent e)
             {
                 TasteGedrueckt ((char) e. getKeyCode ());
             }
-        }
+        };
 
-    
+    }
     void Starten ()
     {
         timer. start ();
@@ -35,11 +36,6 @@ class SIMULATION extends SPIEL
         timer. stop ();
     }
     
-    
-    void TaktdauerSetzen (int dauer)
-    {
-        timer. setDelay(dauer);
-    }
     
     void TasteGedrueckt (char welche)
     {

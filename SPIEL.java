@@ -23,23 +23,7 @@ class SPIEL extends SIMULATION
         schiff = new SCHIFF (0, 0, 'O');
         spielfeldrand = new RANDSYMBOL ();
     }
-    
  
-    void TaktImpulsAusfuehren ()
-    {
-        if (( rumpf. XPositionGeben() <= spielfeldrand. XMaxGeben())
-        && (rumpf. XPositionGeben() >= spielfeldrand. XMinGeben())
-        && (rumpf. YPositionSetzen() <= spielfeldrand. YMaxGeben())
-        && (rumpf. YPositionGeben() >= spielfeldrand. YMinGeben()))
-        {
-        schlange. Bewegen ();
-    }
-    else
-{
-    Anhalten ();
-    spielfeldrand. EndemeldungSetzen ("GameOver- über Spielfeldrand");
-}
-}
     
     void TasteGedrueckt (char welche);
     {
