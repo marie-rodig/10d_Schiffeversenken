@@ -4,7 +4,7 @@ class SCHIFF
 {
     {
   { 
-   /Eigfenschaften
+  
    private boolean schiffwurdebeschossen;
    private boolean schiffistaufgebiet;
    private boolean versenkeschiff;
