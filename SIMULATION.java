@@ -1,8 +1,4 @@
 
-import java.awt.*;
-import javax.swing.*;
-import java.awt.event.*;
-import javax. swing. *;
 
 
 class SIMULATION extends SPIEL
@@ -25,15 +21,7 @@ class SIMULATION extends SPIEL
             {
                 TasteGedrueckt ((char) e. getKeyCode ());
             }
-        });
-
-    }
-    
-    
-    void TaktImpulsAusfuehren ()
-    {
-        System. out. println ("Tick");
-    }
+        }
 
     
     void Starten ()
@@ -42,7 +30,7 @@ class SIMULATION extends SPIEL
     }
 
     
-    void Anhalten ()
+    void Beenden ()
     {
         timer. stop ();
     }

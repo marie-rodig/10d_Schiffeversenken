@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 import java. awt. event. *;
 
 /**
@@ -13,7 +13,7 @@ class SPIEL extends SIMULATION
 {
 
     
-    SCHLANGE schlange;
+    SCHIFF schiff;
     RANDSYMBOL randsymbol;
      /**
      * Baut die Basiselemente auf.
@@ -69,37 +69,5 @@ class SPIEL extends SIMULATION
           default:
             //System. out. println ("Taste: " + (0 + (int) welche));
         }
-=======
-/**
- * Beschreiben Sie hier die Klasse SPIEL.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
-public class SPIEL
-{
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
-
-    /**
-     * Konstruktor für Objekte der Klasse SPIEL
-     */
-    public SPIEL()
-    {
-        // Instanzvariable initialisieren
-        x = 0;
-    }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
->>>>>>> 8e63cb8e88e5f1446cab647a2ab20590fdbbcd94
     }
 }
