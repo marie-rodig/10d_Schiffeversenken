@@ -1,33 +1,72 @@
 
+import java. awt. event. *;
+
 /**
- * Beschreiben Sie hier die Klasse SPIEL.
+ * Rahmenklasse des Spiels.
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @author Albert Wiedemann
+ * @version 1.0
  */
-public class SPIEL
+class SPIEL extends SIMULATION
+
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
 
-    /**
-     * Konstruktor für Objekte der Klasse SPIEL
+    
+    SCHLANGE schlange;
+    RANDSYMBOL randsymbol;
+     /**
+     * Baut die Basiselemente auf.
      */
-    public SPIEL()
+    SPIEL ()
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        schiff = new SCHIFF (0, 0, 'O');
+        spielfeldrand = new RANDSYMBOL ();
     }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
+    
+ 
+    void TaktImpulsAusfuehren ()
     {
-        // tragen Sie hier den Code ein
-        return x + y;
+        if (( rumpf. XPositionGeben() <= spielfeldrand. XMaxGeben())
+        && (rumpf. XPositionGeben() >= spielfeldrand. XMinGeben())
+        && (rumpf. YPositionSetzen() <= spielfeldrand. YMaxGeben())
+        && (rumpf. YPositionGeben() >= spielfeldrand. YMinGeben()))
+        {
+        schlange. Bewegen ();
+    }
+    else
+{
+    Anhalten ();
+    spielfeldrand. EndemeldungSetzen ("GameOver- über Spielfeldrand");
+}
+}
+    
+    void TasteGedrueckt (char welche);
+    {
+        switch (welche)
+        {
+          case 'S':
+          case 's':
+            Starten ();
+            break;
+          case 'P':
+          case 'p':
+            SchiffSetzen ();
+            break;
+          case KeyEvent. VK_DOWN:
+          case KeyEvent. VK_KP_DOWN:
+            schiff. RichtungSetzen ('S');
+            break;
+          case KeyEvent. VK_LEFT:
+            schiff. RichtungSetzen ('W');
+            break;
+          case KeyEvent. VK_RIGHT:
+            schiff. RichtungSetzen ('O');
+            break;
+          case KeyEvent. VK_UP:
+            schiff. RichtungSetzen ('N');
+            break;
+          default:
+            //System. out. println ("Taste: " + (0 + (int) welche));
+        }
     }
 }

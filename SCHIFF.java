@@ -2,15 +2,17 @@
 
 class SCHIFF
 {
-  { //Eigfenschaften
+    {
+  { 
+   /Eigfenschaften
    private boolean schiffwurdebeschossen;
    private boolean schiffistaufgebiet;
    private boolean versenkeschiff;
-  
+
    RUMPF [] rumpf;
     
     
-    SCHIFF (int x, int y, char richtung)
+    SCHIFF (int x, int y, char richtung);
     {
         SCHIFF = new Schiffsymbol ();
         SCHIFF. AusrichtungSetzen (richtung);
@@ -61,7 +63,7 @@ class SCHIFF
      return schiff.XPositionGeben();
   }
 }
-    
+   
    
    
 
