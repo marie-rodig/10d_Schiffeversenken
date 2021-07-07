@@ -2,7 +2,7 @@
 public class Gebiet
 {
     // Eigenschaften
-<<<<<<< HEAD
+
     private boolean feldwurdebeschossen;
     private boolean schiffIstAufFeld;
 
@@ -43,7 +43,7 @@ isFeldWurdeBeschossen (){
  public boolean isSchiff() {
      return schiffIstAufFeld;
  }
-=======
+
     private boolean gebietwurdebeschossen;
     private boolean schiffIstAufGebiet;
     private boolean versenkeschiff;
@@ -87,7 +87,7 @@ public boolean versenkeschiff ()
      }
 
  
-gebietwurdebeschossen (){
+Gebietwurdebeschossen (){
  return gebietwurdebeschossen;
     
 }
@@ -97,4 +97,6 @@ gebietwurdebeschossen (){
  }
 }
 }
->>>>>>> e4159e8670fc797348542e88d3750d56f857881d
+
+
+
