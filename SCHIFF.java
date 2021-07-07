@@ -56,7 +56,7 @@ class SCHIFF
     
         kopf. AusrichtungSetzen (richtungNeu);
     }
-    }
+    {
    { 
       int XPositionGeben;
   
